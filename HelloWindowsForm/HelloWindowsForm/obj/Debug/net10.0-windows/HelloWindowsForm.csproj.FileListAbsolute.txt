@@ -1,0 +1,17 @@
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\bin\Debug\net10.0-windows\HelloWindowsForm.exe
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\bin\Debug\net10.0-windows\HelloWindowsForm.deps.json
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\bin\Debug\net10.0-windows\HelloWindowsForm.runtimeconfig.json
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\bin\Debug\net10.0-windows\HelloWindowsForm.dll
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\bin\Debug\net10.0-windows\HelloWindowsForm.pdb
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\HelloWindowsForm.Form1.resources
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\HelloWindowsForm.csproj.GenerateResource.cache
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\HelloWindowsForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\HelloWindowsForm.AssemblyInfoInputs.cache
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\HelloWindowsForm.AssemblyInfo.cs
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\HelloWindowsForm.csproj.CoreCompileInputs.cache
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\HelloWindowsForm.dll
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\refint\HelloWindowsForm.dll
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\HelloWindowsForm.pdb
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\HelloWindowsForm.genruntimeconfig.cache
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\ref\HelloWindowsForm.dll
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\HelloWindowsForm\HelloWindowsForm\obj\Debug\net10.0-windows\HelloWin.43FF36ED.Up2Date

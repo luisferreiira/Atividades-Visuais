@@ -1,0 +1,15 @@
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\bin\Debug\net10.0\AtividadesVisuais.exe
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\bin\Debug\net10.0\AtividadesVisuais.deps.json
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\bin\Debug\net10.0\AtividadesVisuais.runtimeconfig.json
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\bin\Debug\net10.0\AtividadesVisuais.dll
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\bin\Debug\net10.0\AtividadesVisuais.pdb
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\obj\Debug\net10.0\AtividadesVisuais.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\obj\Debug\net10.0\AtividadesVisuais.AssemblyInfoInputs.cache
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\obj\Debug\net10.0\AtividadesVisuais.AssemblyInfo.cs
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\obj\Debug\net10.0\AtividadesVisuais.csproj.CoreCompileInputs.cache
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\obj\Debug\net10.0\AtividadesVisuais.dll
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\obj\Debug\net10.0\refint\AtividadesVisuais.dll
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\obj\Debug\net10.0\AtividadesVisuais.pdb
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\obj\Debug\net10.0\AtividadesVisuais.genruntimeconfig.cache
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\obj\Debug\net10.0\ref\AtividadesVisuais.dll
+C:\Users\luisg\Downloads\SI_2\linguagem_tecnicas_programacao\Atividades\AtividadesVisuais\AtividadesVisuais\obj\Debug\net10.0\Atividad.D7A11E3C.Up2Date
