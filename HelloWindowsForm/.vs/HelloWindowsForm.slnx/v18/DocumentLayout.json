@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\HelloWindowsForm\\",
+  "WorkspaceRootPath": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\Atividades-Visuais\\HelloWindowsForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFAE3C9B-EB79-4BAD-B208-CE3761FA042A}|HelloWindowsForm\\HelloWindowsForm.csproj|c:\\users\\luisg\\downloads\\si_2\\linguagem_tecnicas_programacao\\atividades\\hellowindowsform\\hellowindowsform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CFAE3C9B-EB79-4BAD-B208-CE3761FA042A}|HelloWindowsForm\\HelloWindowsForm.csproj|solutionrelative:hellowindowsform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{13752097-B6E3-0F83-95A8-0DAF3E8E7F9E}|HelloWindowsForm\\HelloWindowsForm.csproj|c:\\users\\luisg\\downloads\\si_2\\linguagem_tecnicas_programacao\\atividades\\atividades-visuais\\hellowindowsform\\hellowindowsform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13752097-B6E3-0F83-95A8-0DAF3E8E7F9E}|HelloWindowsForm\\HelloWindowsForm.csproj|solutionrelative:hellowindowsform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFAE3C9B-EB79-4BAD-B208-CE3761FA042A}|HelloWindowsForm\\HelloWindowsForm.csproj|c:\\users\\luisg\\downloads\\si_2\\linguagem_tecnicas_programacao\\atividades\\hellowindowsform\\hellowindowsform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFAE3C9B-EB79-4BAD-B208-CE3761FA042A}|HelloWindowsForm\\HelloWindowsForm.csproj|solutionrelative:hellowindowsform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13752097-B6E3-0F83-95A8-0DAF3E8E7F9E}|HelloWindowsForm\\HelloWindowsForm.csproj|c:\\users\\luisg\\downloads\\si_2\\linguagem_tecnicas_programacao\\atividades\\atividades-visuais\\hellowindowsform\\hellowindowsform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13752097-B6E3-0F83-95A8-0DAF3E8E7F9E}|HelloWindowsForm\\HelloWindowsForm.csproj|solutionrelative:hellowindowsform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\HelloWindowsForm\\HelloWindowsForm\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\Atividades-Visuais\\HelloWindowsForm\\HelloWindowsForm\\Form1.cs",
               "RelativeDocumentMoniker": "HelloWindowsForm\\Form1.cs",
-              "ToolTip": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\HelloWindowsForm\\HelloWindowsForm\\Form1.cs",
+              "ToolTip": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\Atividades-Visuais\\HelloWindowsForm\\HelloWindowsForm\\Form1.cs",
               "RelativeToolTip": "HelloWindowsForm\\Form1.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAQwDwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -38,9 +38,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\HelloWindowsForm\\HelloWindowsForm\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\Atividades-Visuais\\HelloWindowsForm\\HelloWindowsForm\\Form1.cs",
               "RelativeDocumentMoniker": "HelloWindowsForm\\Form1.cs",
-              "ToolTip": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\HelloWindowsForm\\HelloWindowsForm\\Form1.cs [Projeto]",
+              "ToolTip": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\Atividades-Visuais\\HelloWindowsForm\\HelloWindowsForm\\Form1.cs [Projeto]",
               "RelativeToolTip": "HelloWindowsForm\\Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-24T16:08:43.22Z",

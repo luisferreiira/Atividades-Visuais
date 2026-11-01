@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\HelloWindowsForm\\HelloWindowsForm\\HelloWindowsForm.csproj": {}
+    "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\Atividades-Visuais\\HelloWindowsForm\\HelloWindowsForm\\HelloWindowsForm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\HelloWindowsForm\\HelloWindowsForm\\HelloWindowsForm.csproj": {
+    "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\Atividades-Visuais\\HelloWindowsForm\\HelloWindowsForm\\HelloWindowsForm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\HelloWindowsForm\\HelloWindowsForm\\HelloWindowsForm.csproj",
+        "projectUniqueName": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\Atividades-Visuais\\HelloWindowsForm\\HelloWindowsForm\\HelloWindowsForm.csproj",
         "projectName": "HelloWindowsForm",
-        "projectPath": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\HelloWindowsForm\\HelloWindowsForm\\HelloWindowsForm.csproj",
+        "projectPath": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\Atividades-Visuais\\HelloWindowsForm\\HelloWindowsForm\\HelloWindowsForm.csproj",
         "packagesPath": "C:\\Users\\luisg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\HelloWindowsForm\\HelloWindowsForm\\obj\\",
+        "outputPath": "C:\\Users\\luisg\\Downloads\\SI_2\\linguagem_tecnicas_programacao\\Atividades\\Atividades-Visuais\\HelloWindowsForm\\HelloWindowsForm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
