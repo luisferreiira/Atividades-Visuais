@@ -13,7 +13,7 @@ Aplicação desktop acadêmica em C# Windows Forms para gerenciar bandas e gêne
 - **Cadastro de gêneros:** formulário próprio para adicionar gêneros musicais.
 - **Navegação:** telas de login e cadastro de gêneros, além de abas para cadastro, busca e alteração de bandas.
 
-As operações dependem das tabelas e stored procedures disponíveis no MySQL. Consulte as pendências do script na seção de configuração do banco.
+As operações dependem das tabelas e stored procedures disponíveis no MySQL. O script SQL fornecido inclui as três tabelas e as sete procedures utilizadas pela aplicação.
 
 ## Baixar somente este projeto
 
@@ -54,36 +54,34 @@ cd Atividades-Visuais/SistemaCadastroModelo
 
 ### 1. Preparar o banco de dados
 
-No MySQL Workbench, crie e selecione o banco usado pela aplicação:
+No MySQL Workbench ou HeidiSQL, abra e execute **`sql_sistema_cadastro_bandas.sql`**. O arquivo cria e seleciona o banco `bandas`, cria as tabelas e procedures e insere os dados de demonstração.
 
-```sql
-CREATE DATABASE IF NOT EXISTS bandas
-  CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
-USE bandas;
-```
-
-Depois, abra e execute `DumpBancoCadastro.sql` nesse banco. O script recria as tabelas `generos` e `bandas`, insere dados de exemplo e cria três procedures. Como contém `DROP TABLE`, use um banco de desenvolvimento sem dados que precise preservar.
+Use preferencialmente uma instalação nova do banco `bandas`. As tabelas usam `CREATE TABLE IF NOT EXISTS` e os dados usam `INSERT IGNORE`, mas as procedures usam `CREATE PROCEDURE` sem remover versões existentes. Se você já importou o script antigo, remova ou renomeie as procedures antigas antes de importar o novo; executar o arquivo novamente pode gerar erros de procedure já existente. Preserve os dados existentes antes de alterar seu banco.
 
 | Tabela | Campos |
 | --- | --- |
 | `generos` | `idgenero`, `genero` |
 | `bandas` | `idbandas`, `nome`, `integrantes`, `ranking`, `fk_genero` |
+| `usuarios` | `idusuarios`, `nome`, `senha` (hash SHA-256) |
 
-O script inclui os gêneros Rock, Metal, Pagode, Gospel e Funk e as bandas Skank e Metallica.
+O script inclui as bandas Skank, Metallica, Evanescence e Coldplay e os gêneros Rock, Metal, Pagode, Gospel, Funk, Pop, Sertanejo e teste.
 
-**Pendências do script fornecido:** o código da aplicação está mais completo que o dump SQL. Para executar todas as funcionalidades, o banco precisa atender aos seguintes contratos:
-
-| Procedure usada pelo código | Situação no dump / requisito |
+| Procedure incluída | Função |
 | --- | --- |
-| `sp_insereBanda(nome, integrantes, ranking, genero)` | Incluída. Insere a banda. |
-| `sp_listaBandas()` | Incluída, mas precisa retornar também a coluna `integrantes`, lida pela tela de alteração. Deve retornar `idbandas`, `nome`, `integrantes`, `ranking` e `genero`. |
-| `sp_listaGeneros()` | Incluída. Retorna os gêneros. |
-| `sp_removeBanda(idbanda)` | Não incluída. Necessária para excluir a banda pelo identificador. |
-| `sp_alteraBanda(idbanda, nome, genero, integrantes, ranking)` | Não incluída. Necessária para atualizar a banda. |
-| `sp_insereGenero(nome)` | Não incluída. Necessária para cadastrar gêneros. |
-| `sp_consultaLogin(usuario, senha)` | Não incluída. Deve consultar a estrutura de usuários e retornar ao menos uma linha quando as credenciais forem válidas. A senha recebida é um hash SHA-256 hexadecimal de 64 caracteres. |
+| `sp_insereBanda(nome, integrantes, ranking, genero)` | Cadastra uma banda. |
+| `sp_listaBandas()` | Retorna `idbandas`, `nome`, `integrantes`, `ranking` e `genero`. |
+| `sp_listaGeneros()` | Lista os gêneros musicais. |
+| `sp_removeBanda(idbanda)` | Exclui a banda pelo identificador. |
+| `sp_alteraBanda(idbanda, nome, integrantes, ranking, genero)` | Atualiza os dados da banda. |
+| `sp_insereGenero(nome)` | Cadastra um gênero musical. |
+| `sp_consultaLogin(usuario, senha)` | Consulta o usuário e o hash da senha para autenticação. |
 
-O dump também não fornece a estrutura de usuários nem um usuário inicial. Não há credenciais de login de demonstração definidas por esse script. Como a aplicação inicia no login, apenas importar o dump não basta para acessar o sistema.
+**Login de demonstração da aplicação**, disponível em uma importação nova:
+
+- Usuário: `root`
+- Senha: `1234`
+
+O banco armazena o hash SHA-256 da senha. Essas credenciais são públicas e destinadas à demonstração acadêmica. Esse usuário pertence à tabela `usuarios` da aplicação; as credenciais de conexão com o servidor MySQL são configuradas separadamente em `Connection.cs`.
 
 ### 2. Configurar a conexão
 
@@ -103,9 +101,9 @@ A classe `Connection` monta a conexão a partir dessas constantes. Alterar somen
 
 1. Abra `SistemaCadastro.sln` no Visual Studio.
 2. Restaure os pacotes NuGet da solução.
-3. Conclua a configuração das tabelas, procedures e usuário de login no MySQL.
+3. Importe o script SQL e ajuste a conexão com o MySQL conforme as etapas anteriores.
 4. Compile e pressione **F5** para executar.
-5. Entre com um usuário cadastrado no seu banco.
+5. Entre com o usuário de demonstração `root` e a senha `1234`, ou com outro usuário cadastrado no seu banco.
 
 ## Como usar
 
@@ -122,7 +120,7 @@ Os campos de integrantes e ranking são convertidos para números inteiros pelo 
 ```text
 SistemaCadastroModelo/
 ├── README.md
-├── DumpBancoCadastro.sql
+├── sql_sistema_cadastro_bandas.sql
 ├── SistemaCadastro.sln
 └── SistemaCadastro/
     ├── SistemaCadastro.csproj
