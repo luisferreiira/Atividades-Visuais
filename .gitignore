@@ -1,0 +1,6 @@
+# Arquivos locais e de compilacao do Visual Studio
+**/.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
