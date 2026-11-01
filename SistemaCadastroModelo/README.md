@@ -1,132 +1,146 @@
 # Sistema de Cadastro de Bandas
 
-Sistema desktop desenvolvido em C# Windows Forms para gerenciamento e cadastro de bandas musicais.
+Aplicação desktop acadêmica em C# Windows Forms para gerenciar bandas e gêneros musicais, com persistência em MySQL. Este projeto faz parte do repositório **Atividades-Visuais**.
 
-## 📋 Descrição
+## Funcionalidades implementadas no código
 
-Este projeto é um sistema de cadastro que permite gerenciar informações sobre bandas musicais, incluindo nome, número de integrantes, ranking e gênero musical. O sistema utiliza MySQL como banco de dados e oferece uma interface gráfica intuitiva para cadastro e busca de informações.
+- **Login:** tela inicial com usuário e senha; a senha é convertida em hash SHA-256 antes da consulta ao banco.
+- **Cadastro de bandas:** informa nome, quantidade de integrantes, ranking e gênero musical.
+- **Listagem:** exibe as bandas e seus gêneros em uma tabela, ocultando o identificador interno.
+- **Busca por nome:** filtra a lista enquanto o usuário digita, procurando nomes que começam com o texto informado.
+- **Alteração:** carrega os dados da banda selecionada e permite atualizar nome, integrantes, ranking e gênero.
+- **Exclusão:** solicita confirmação antes de remover a banda selecionada e atualiza a listagem.
+- **Cadastro de gêneros:** formulário próprio para adicionar gêneros musicais.
+- **Navegação:** telas de login e cadastro de gêneros, além de abas para cadastro, busca e alteração de bandas.
 
-## 🚀 Tecnologias Utilizadas
+As operações dependem das tabelas e stored procedures disponíveis no MySQL. Consulte as pendências do script na seção de configuração do banco.
 
-- **C# (.NET Framework)** - Linguagem de programação
-- **Windows Forms** - Framework para interface gráfica
-- **MySQL 8.1.0** - Sistema de gerenciamento de banco de dados
-- **ADO.NET** - Acesso a dados
-- **Visual Studio** - IDE de desenvolvimento
+## Baixar somente este projeto
 
-## 📦 Dependências
+Com o Git instalado, execute os comandos abaixo no terminal:
 
-O projeto utiliza as seguintes bibliotecas NuGet:
-
-- MySql.Data 8.1.0
-
-
-## 🗄️ Estrutura do Banco de Dados
-
-O sistema utiliza duas tabelas principais:
-
-### Tabela `generos`
-- `idgenero` (INT, AUTO_INCREMENT, PRIMARY KEY)
-- `genero` (VARCHAR(45))
-
-Gêneros pré-cadastrados: Rock, Metal, Pagode, Gospel, Funk
-
-### Tabela `bandas`
-- `idbandas` (INT, AUTO_INCREMENT, PRIMARY KEY)
-- `nome` (VARCHAR(45))
-- `integrantes` (INT)
-- `ranking` (INT)
-- `fk_genero` (INT, FOREIGN KEY)
-
-### Stored Procedures
-
-- `sp_insereBanda` - Insere uma nova banda no banco
-- `sp_listaBandas` - Lista todas as bandas com seus gêneros
-- `sp_listaGeneros` - Lista todos os gêneros disponíveis
-
-## ⚙️ Instalação e Configuração
-
-### Pré-requisitos
-
-- Visual Studio 2019 ou superior
-- MySQL Server 8.0 ou superior
-- .NET Framework 4.7.2 ou superior
-
-### Passo a Passo
-
-1. **Clone o repositório**
-   ```bash
-   git clone <url-do-repositorio>
-   cd "Semana 12 - Projeto CSharp - Modelo"
-   ```
-
-2. **Configure o Banco de Dados**
-   - Abra o MySQL Workbench ou outro cliente MySQL
-   - Execute o script `DumpBancoCadastro.sql` para criar as tabelas e procedures
-   ```sql
-   source DumpBancoCadastro.sql
-   ```
-
-3. **Configure a String de Conexão**
-   - Abra o arquivo `App.config` no projeto SistemaCadastro
-   - Atualize a string de conexão com suas credenciais do MySQL
-   ```xml
-   <connectionStrings>
-     <add name="MySqlConnection" 
-          connectionString="Server=localhost;Database=cadastro;Uid=root;Pwd=sua_senha;" 
-          providerName="MySql.Data.MySqlClient"/>
-   </connectionStrings>
-   ```
-
-4. **Restaure os Pacotes NuGet**
-   - No Visual Studio, clique com o botão direito na solução
-   - Selecione "Restore NuGet Packages"
-
-5. **Compile e Execute**
-   - Pressione `F5` ou clique em "Start" no Visual Studio
-
-## 🎯 Funcionalidades
-
-- ✅ **Cadastro de Bandas** - Adicione novas bandas com informações completas
-- 🔍 **Busca de Bandas** - Pesquise bandas cadastradas
-- 📝 **Alteração de Dados** - Edite informações de bandas existentes
-- 🗑️ **Remoção de Bandas** - Exclua registros do sistema
-- 🎵 **Gerenciamento de Gêneros** - Adicione novos gêneros musicais
-- 📊 **Visualização em Lista** - Veja todas as bandas cadastradas
-
-## 📁 Estrutura do Projeto
-
-```
-SistemaCadastro/
-├── Program.cs              # Ponto de entrada da aplicação
-├── Sistema.cs              # Lógica principal do formulário
-├── Sistema.Designer.cs     # Designer do Windows Forms
-├── App.config             # Configurações da aplicação
-├── packages.config        # Configuração de pacotes NuGet
-└── Properties/            # Propriedades do projeto
-    ├── AssemblyInfo.cs
-    ├── Resources.resx
-    └── Settings.settings
+```powershell
+git clone --filter=blob:none --sparse https://github.com/luisferreiira/Atividades-Visuais.git
+cd Atividades-Visuais
+git sparse-checkout set SistemaCadastroModelo
+cd SistemaCadastroModelo
 ```
 
-## 🎨 Interface
+O **sparse checkout** deixa disponíveis a pasta `SistemaCadastroModelo` e os arquivos da raiz do repositório. O filtro `--filter=blob:none` evita baixar antecipadamente o conteúdo dos arquivos dos demais projetos. O vínculo e os metadados do Git continuam sendo do repositório `Atividades-Visuais`.
 
-O sistema possui uma interface com navegação por abas:
+Para receber atualizações depois, execute dentro da pasta clonada:
 
-- **Aba Cadastro** - Formulário para inserir novas bandas
-- **Aba Busca** - Interface para pesquisar e visualizar bandas cadastradas
+```powershell
+git pull origin main
+```
 
-A navegação é facilitada por botões laterais com indicador visual de aba selecionada.
+Se preferir baixar todos os projetos, use o clone convencional:
 
+```powershell
+git clone https://github.com/luisferreiira/Atividades-Visuais.git
+cd Atividades-Visuais/SistemaCadastroModelo
+```
 
-## 📝 Licença
+## Tecnologias e requisitos
 
-Este projeto é um trabalho acadêmico desenvolvido para fins educacionais.
+- Windows para executar a aplicação Windows Forms.
+- Visual Studio com a carga de trabalho **Desenvolvimento para desktop com .NET**.
+- .NET Framework **4.7.2**, versão definida no projeto, e seu Developer Pack para compilação.
+- MySQL 8.0 ou compatível com a collation `utf8mb4_0900_ai_ci` usada no script.
+- MySQL Workbench ou outro cliente para configurar o banco.
+- ADO.NET e pacote NuGet **MySql.Data 8.1.0**; restaure também as dependências de `packages.config`.
 
-## 👥 Autor
+## Configuração e execução
 
-Desenvolvido como projeto do curso de Linguagem I
+### 1. Preparar o banco de dados
 
----
+No MySQL Workbench, crie e selecione o banco usado pela aplicação:
 
-**Nota**: Este é um projeto modelo para fins educacionais. Certifique-se de implementar as validações e tratamento de erros adequados antes de usar em produção.
+```sql
+CREATE DATABASE IF NOT EXISTS bandas
+  CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE bandas;
+```
+
+Depois, abra e execute `DumpBancoCadastro.sql` nesse banco. O script recria as tabelas `generos` e `bandas`, insere dados de exemplo e cria três procedures. Como contém `DROP TABLE`, use um banco de desenvolvimento sem dados que precise preservar.
+
+| Tabela | Campos |
+| --- | --- |
+| `generos` | `idgenero`, `genero` |
+| `bandas` | `idbandas`, `nome`, `integrantes`, `ranking`, `fk_genero` |
+
+O script inclui os gêneros Rock, Metal, Pagode, Gospel e Funk e as bandas Skank e Metallica.
+
+**Pendências do script fornecido:** o código da aplicação está mais completo que o dump SQL. Para executar todas as funcionalidades, o banco precisa atender aos seguintes contratos:
+
+| Procedure usada pelo código | Situação no dump / requisito |
+| --- | --- |
+| `sp_insereBanda(nome, integrantes, ranking, genero)` | Incluída. Insere a banda. |
+| `sp_listaBandas()` | Incluída, mas precisa retornar também a coluna `integrantes`, lida pela tela de alteração. Deve retornar `idbandas`, `nome`, `integrantes`, `ranking` e `genero`. |
+| `sp_listaGeneros()` | Incluída. Retorna os gêneros. |
+| `sp_removeBanda(idbanda)` | Não incluída. Necessária para excluir a banda pelo identificador. |
+| `sp_alteraBanda(idbanda, nome, genero, integrantes, ranking)` | Não incluída. Necessária para atualizar a banda. |
+| `sp_insereGenero(nome)` | Não incluída. Necessária para cadastrar gêneros. |
+| `sp_consultaLogin(usuario, senha)` | Não incluída. Deve consultar a estrutura de usuários e retornar ao menos uma linha quando as credenciais forem válidas. A senha recebida é um hash SHA-256 hexadecimal de 64 caracteres. |
+
+O dump também não fornece a estrutura de usuários nem um usuário inicial. Não há credenciais de login de demonstração definidas por esse script. Como a aplicação inicia no login, apenas importar o dump não basta para acessar o sistema.
+
+### 2. Configurar a conexão
+
+Abra `SistemaCadastro/Connection.cs` e ajuste as constantes conforme seu MySQL:
+
+```csharp
+public const string SERVER = "localhost";
+public const int PORT = 3307; // use a porta do seu servidor, por exemplo 3306
+public const string DATABASE = "bandas";
+public const string USER = "seu_usuario";
+public const string PASSWORD = "sua_senha";
+```
+
+A classe `Connection` monta a conexão a partir dessas constantes. Alterar somente o `App.config` não altera a conexão utilizada atualmente.
+
+### 3. Abrir e executar
+
+1. Abra `SistemaCadastro.sln` no Visual Studio.
+2. Restaure os pacotes NuGet da solução.
+3. Conclua a configuração das tabelas, procedures e usuário de login no MySQL.
+4. Compile e pressione **F5** para executar.
+5. Entre com um usuário cadastrado no seu banco.
+
+## Como usar
+
+1. Faça login para abrir a tela principal.
+2. Na aba de cadastro, preencha nome, integrantes, ranking e gênero e confirme o cadastro.
+3. Use o botão de adicionar gênero para abrir o formulário de gêneros, se necessário.
+4. Na aba de busca, digite o início do nome para filtrar as bandas.
+5. Selecione uma banda na tabela para alterar seus dados ou excluí-la com confirmação.
+
+Os campos de integrantes e ranking são convertidos para números inteiros pelo código. Preencha-os com valores inteiros válidos.
+
+## Estrutura do projeto
+
+```text
+SistemaCadastroModelo/
+├── README.md
+├── DumpBancoCadastro.sql
+├── SistemaCadastro.sln
+└── SistemaCadastro/
+    ├── SistemaCadastro.csproj
+    ├── Program.cs                 # Inicializa a tela de login
+    ├── FormLogin.cs               # Entrada no sistema
+    ├── Sistema.cs                 # Cadastro, busca, alteração e exclusão
+    ├── FormAddGenero.cs           # Cadastro de gêneros
+    ├── Connection.cs              # Conexão e chamadas às procedures
+    ├── Biblioteca.cs              # Geração do hash SHA-256
+    ├── Banda.cs                   # Modelo de banda
+    ├── App.config
+    ├── packages.config
+    ├── Properties/
+    └── Resources/
+```
+
+Os formulários também possuem arquivos `.Designer.cs` e `.resx` com a definição visual e os recursos da interface.
+
+## Finalidade
+
+Projeto acadêmico desenvolvido para fins educacionais no curso de Linguagem I.
